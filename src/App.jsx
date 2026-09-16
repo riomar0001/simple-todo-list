@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 
 import { TodoForm } from '@/components/TodoForm'
 import { TodoList } from '@/components/TodoList'
-import { TodoStats } from '@/components/TodoStats'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 const STORAGE_KEY = 'todos'
@@ -39,7 +38,6 @@ function App() {
       <Card className="w-full max-w-md">
         <CardHeader>
           <CardTitle>Simple Todo List</CardTitle>
-          <TodoStats todos={todos} />
         </CardHeader>
 
         <CardContent className="space-y-4">
